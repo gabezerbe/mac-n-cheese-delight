@@ -1,46 +1,16 @@
+# Mac N' Cheese Delights
+This mod was created to fix the heinous error Farmer's Delight has left un-patched to this day: a lack of Mac N' Cheese dishes.
 
-Source installation information for modders
--------------------------------------------
-This code follows the Minecraft Forge installation methodology. It will apply
-some small patches to the vanilla MCP source code, giving you and it access 
-to some of the data and functions you need to build a successful mod.
+## If you have suggestions:
+Please visit the mod page on CurseForge and leave them there. If the suggestions aren't Mac N' Cheese related don't even bother, I won't read them.
 
-Note also that the patches are built against "un-renamed" MCP source code (aka
-SRG Names) - this means that you will not be able to read them directly against
-normal code.
+## If you experience bugs:
+Feel free to open an issue on this repository with the following:
+* The error you received
+* Any error logs that may have been generated
+* Any Stack traces that may have been generated
+* Complete mod list that you were using when you received the error (in a .txt file or something if possible)
+* The steps you took to getting to this error, e.g. "I installed the mod, created a new world, and as soon as I put the Mac N' Cheese in my inventory I crashed!"
 
-Setup Process:
-==============================
-
-Step 1: Open your command-line and browse to the folder where you extracted the zip file.
-
-Step 2: You're left with a choice.
-If you prefer to use Eclipse:
-1. Run the following command: `./gradlew genEclipseRuns`
-2. Open Eclipse, Import > Existing Gradle Project > Select Folder 
-   or run `gradlew eclipse` to generate the project.
-
-If you prefer to use IntelliJ:
-1. Open IDEA, and import project.
-2. Select your build.gradle file and have it import.
-3. Run the following command: `./gradlew genIntellijRuns`
-4. Refresh the Gradle Project in IDEA if required.
-
-If at any point you are missing libraries in your IDE, or you've run into problems you can 
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-(this does not affect your code) and then start the process again.
-
-Mapping Names:
-=============================
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license, if you do not agree with it you can change your mapping names to other crowdsourced names in your 
-build.gradle. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/MinecraftForge/MCPConfig/blob/master/Mojang.md
-
-Additional Resources: 
-=========================
-Community Documentation: https://docs.minecraftforge.net/en/1.20.1/gettingstarted/
-LexManos' Install Video: https://youtu.be/8VEdtQLuLO0
-Forge Forums: https://forums.minecraftforge.net/
-Forge Discord: https://discord.minecraftforge.net/
+## Disclaimers:
+I will never charge money for this mod or any of the mods I create. If you see someone else uploading this mod and charging money for it please let me know as this is a violation of the Minecraft ToS and mods should be a free experience for the entire community.

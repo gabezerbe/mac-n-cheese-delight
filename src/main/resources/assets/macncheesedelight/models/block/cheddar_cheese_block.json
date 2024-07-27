@@ -1,0 +1,6 @@
+{
+  "parent" : "minecraft:block/cube_all",
+  "textures" : {
+    "all" : "macncheesedelight:block/cheddar_cheese_block"
+  }
+}

@@ -1,6 +1,7 @@
 package gg.zerbe.macncheesedelight;
 
 import com.mojang.logging.LogUtils;
+import gg.zerbe.macncheesedelight.block.ModBlocks;
 import gg.zerbe.macncheesedelight.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
@@ -43,8 +44,13 @@ public class MacNCheeseDelightMod {
         public MacNCheeseDelightMod()
         {
                 IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
                 // Register our items from the ModItems class
                 ModItems.register(modEventBus);
+                // Register out custom blocks from the ModBlocks class
+                ModBlocks.register(modEventBus);
+
+
                 MinecraftForge.EVENT_BUS.register(this);
                 modEventBus.addListener(this::addCreative);
         }
@@ -60,6 +66,7 @@ public class MacNCheeseDelightMod {
                         event.accept(ModItems.CHEDDAR_CHEESE);
                         event.accept(ModItems.MOZZARELLA_CHEESE);
                         event.accept(ModItems.BOWL_OF_MAC_AND_CHEESE);
+                        event.accept(ModBlocks.CHEDDAR_CHEESE_BLOCK);
                 }
         }
 

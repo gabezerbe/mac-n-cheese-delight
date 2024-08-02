@@ -121,7 +121,7 @@ repositories {
 dependencies {
 
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
-    implementation fg.deobf("curse.maven:farmers-delight-398521:5051242")
+//    implementation fg.deobf("curse.maven:farmers-delight-398521:5051242")
 
 }
 

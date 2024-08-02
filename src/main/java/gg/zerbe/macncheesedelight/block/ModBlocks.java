@@ -28,7 +28,6 @@ public class ModBlocks {
     public static final RegistryObject<Block> CHEDDAR_CHEESE_BLOCK = registerBlock("cheddar_cheese_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.SLIME_BLOCK)));
 
-
     //Helper methods
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block)
     {

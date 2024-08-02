@@ -15,8 +15,11 @@ public class ModItems {
     public static final RegistryObject<Item> CHEDDAR_CHEESE = ITEMS.register("cheddar_cheese",
             () -> new Item(new Item.Properties().food(ModFoods.CHEDDAR_CHEESE)));
 
-    public static final RegistryObject<Item> MOZZARELLA_CHEESE = ITEMS.register("mozzarella_cheese",
-            () -> new Item(new Item.Properties().food(ModFoods.MOZZARELLA_CHEESE)));
+    public static final RegistryObject<Item> SLICED_CHEDDAR_CHEESE = ITEMS.register("sliced_cheddar_cheese",
+            () -> new Item(new Item.Properties().food(ModFoods.SLICED_CHEDDAR_CHEESE)));
+
+//    public static final RegistryObject<Item> MOZZARELLA_CHEESE = ITEMS.register("mozzarella_cheese",
+//            () -> new Item(new Item.Properties().food(ModFoods.MOZZARELLA_CHEESE)));
     public static final RegistryObject<Item> BOWL_OF_MAC_AND_CHEESE = ITEMS.register("bowl_of_mac_n_cheese",
             () -> new Item(new Item.Properties().food(ModFoods.BOWL_OF_MAC_N_CHEESE)));
 

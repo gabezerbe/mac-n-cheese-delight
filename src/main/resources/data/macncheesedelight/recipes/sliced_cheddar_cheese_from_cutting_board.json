@@ -1,0 +1,17 @@
+{
+  "type" : "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item" : "macncheesedelight:cheddar_cheese"
+    }
+  ],
+  "tool" : {
+    "tag" : "forge:tools/knives"
+  },
+  "result"  : [
+    {
+      "item" : "macncheesedelight:sliced_cheddar_cheese",
+      "count" : 4
+    }
+  ]
+}

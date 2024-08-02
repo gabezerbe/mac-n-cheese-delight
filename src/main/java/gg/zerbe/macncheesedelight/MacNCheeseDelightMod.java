@@ -64,7 +64,7 @@ public class MacNCheeseDelightMod {
         {
                 if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
                         event.accept(ModItems.CHEDDAR_CHEESE);
-                        event.accept(ModItems.MOZZARELLA_CHEESE);
+                        event.accept(ModItems.SLICED_CHEDDAR_CHEESE);
                         event.accept(ModItems.BOWL_OF_MAC_AND_CHEESE);
                         event.accept(ModBlocks.CHEDDAR_CHEESE_BLOCK);
                 }

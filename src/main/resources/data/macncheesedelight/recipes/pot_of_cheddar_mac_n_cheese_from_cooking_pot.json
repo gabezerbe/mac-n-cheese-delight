@@ -18,5 +18,8 @@
   "result" : {
     "item" : "macncheesedelight:pot_of_cheddar_mac_n_cheese"
   },
+  "container" : {
+    "item" : "minecraft:bucket"
+  },
   "cookingtime" : 250
 }

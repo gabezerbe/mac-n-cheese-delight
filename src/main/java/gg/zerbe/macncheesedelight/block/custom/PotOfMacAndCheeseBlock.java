@@ -76,7 +76,7 @@ public class PotOfMacAndCheeseBlock extends Block {
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit)
     {
         if(level.isClientSide){
-            if(this.takeServing(level, pos, state, player, hand).consumeAction()){
+            if(this.takeServing(level, pos, state, player, hand).consumesAction()){
                 return InteractionResult.SUCCESS;
             }
         }

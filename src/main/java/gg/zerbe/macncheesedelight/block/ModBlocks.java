@@ -28,6 +28,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> CHEDDAR_CHEESE_BLOCK = registerBlock("cheddar_cheese_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.SLIME_BLOCK)));
 
+    public static final RegistryObject<Block> POT_OF_CHEDDAR_MAC_AND_CHEESE = registerBlock("pot_of_cheddar_mac_n_cheese",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CAKE)));
+
+    public static final RegistryObject<Block> POT_OF_CHEDDAR_MAC_AND_CHEESE_ITEM = registerBlockItem("pot_of_cheddar_mac_n_cheese", POT_OF_CHEDDAR_MAC_AND_CHEESE);
+
     //Helper methods
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block)
     {

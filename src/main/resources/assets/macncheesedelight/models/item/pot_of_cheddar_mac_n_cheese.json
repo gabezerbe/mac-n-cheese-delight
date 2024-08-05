@@ -1,0 +1,6 @@
+{
+  "parent" : "item/generated",
+  "textures" : {
+    "layer0" : "macncheesedelight:item/pot_of_cheddar_mac_n_cheese"
+  }
+}

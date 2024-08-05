@@ -1,19 +1,21 @@
 {
-  "type" : "farmersdelight:cooking",
-  "recipe_book_tab" : "meals",
+  "type": "farmersdelight:cooking",
+  "recipe_book_tab": "misc",
   "ingredients" : [
     {
       "tag" : "forge:milk"
     },
     {
-      "tag" : "forge:item/pasta"
-    },
-    {
       "item" : "macncheesedelight:sliced_cheddar_cheese"
     },
     {
       "item" : "macncheesedelight:sliced_cheddar_cheese"
-    }
+    },
+    [
+      {"tag" : "forge:raw_pasta"},
+      {"tag" :  "forge:pasta"}
+    ]
+
   ],
   "result" : {
     "item" : "macncheesedelight:pot_of_cheddar_mac_n_cheese"

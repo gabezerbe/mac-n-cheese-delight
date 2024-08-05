@@ -1,0 +1,19 @@
+{
+  "variants" : {
+    "facing=north" : {
+      "model" : "macncheesedelight:block/pot_of_cheddar_mac_n_cheese",
+      "y": 180
+    },
+    "facing=east": {
+      "model" : "macncheesedelight:block/pot_of_cheddar_mac_n_cheese",
+      "y": 270
+    },
+    "facing=south" : {
+      "model" : "macncheesedelight:block/pot_of_cheddar_mac_n_cheese"
+    },
+    "facing=west": {
+      "model" : "macncheesedelight:block/pot_of_cheddar_mac_n_cheese",
+      "y": 90
+    }
+  }
+}

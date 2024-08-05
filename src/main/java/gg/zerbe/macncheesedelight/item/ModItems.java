@@ -1,6 +1,8 @@
 package gg.zerbe.macncheesedelight.item;
 
 import gg.zerbe.macncheesedelight.MacNCheeseDelightMod;
+import gg.zerbe.macncheesedelight.block.ModBlocks;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;

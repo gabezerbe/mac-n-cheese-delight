@@ -18,6 +18,7 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
@@ -26,6 +27,7 @@ import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.pathfinder.PathComputationType;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 import java.util.function.Supplier;
@@ -38,12 +40,19 @@ public class PotOfMacAndCheeseBlock extends Block {
     public final Supplier<Item> servingItem;
     public final boolean hasLeftovers;
 
-    protected static final VoxelShape[] SHAPES = new VoxelShape[]{
-            Block.box(2.0D, 0.0D, 2.0D, 14.0D, 1.0D, 14.0D),
-            Block.box(2.0D, 0.0D, 2.0D, 14.0D, 3.0D, 14.0D),
-            Block.box(2.0D, 0.0D, 2.0D, 14.0D, 6.0D, 14.0D),
-            Block.box(2.0D, 0.0D, 2.0D, 14.0D, 8.0D, 14.0D),
-            Block.box(2.0D, 0.0D, 2.0D, 14.0D, 10.0D, 14.0D),
+    protected static final VoxelShape[] POT_WALLS = new VoxelShape[]{
+            Shapes.or(Block.box(13, 1, 2, 14, 8, 14),
+                    Block.box(2, 1, 2, 3, 8, 14),
+                    Block.box(3, 1, 2, 13, 8, 3),
+                    Block.box(3, 1, 13, 13, 8, 14),
+                    Block.box(3, 0 ,3, 13, 2, 13),
+                    Block.box(0, 5, 6, 2, 6, 7),
+                    Block.box(0,5,9,2,6,10),
+                    Block.box(0, 5, 7,  1, 6, 9),
+                    Block.box(14, 5, 6, 16, 6, 7),
+                    Block.box(14,5,9,16,6,10),
+                    Block.box(15, 5, 7, 16, 6, 9),
+                    Block.box(3, 2, 3, 13, 7, 13))
     };
 
     public PotOfMacAndCheeseBlock(Properties properties, Supplier<Item> servingItem, boolean hasLeftovers)
@@ -69,7 +78,7 @@ public class PotOfMacAndCheeseBlock extends Block {
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context)
     {
-        return SHAPES[state.getValue(SERVINGS)];
+        return POT_WALLS[0];
     }
 
     @Override
@@ -126,6 +135,11 @@ public class PotOfMacAndCheeseBlock extends Block {
         }
 
         return InteractionResult.PASS;
+    }
+
+    @Override
+    public RenderShape getRenderShape(BlockState state){
+        return RenderShape.MODEL;
     }
 
     @Override

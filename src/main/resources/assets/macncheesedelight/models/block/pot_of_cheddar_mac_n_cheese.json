@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "macncheesedelight:block/pot_of_mac_and_cheese_debug",
-		"particle": "macncheesedelight:block/pot_of_mac_and_cheese_debug"
+		"0": "macncheesedelight:block/pot_of_cheddar_mac_and_cheese",
+		"particle": "macncheesedelight:block/pot_of_cheddar_mac_and_cheese"
 	},
 	"elements": [
 		{
